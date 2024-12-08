@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GO STORE - Men's Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>GO STORE</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to GO STORE</h2>
+    <p>The best place for men's fashion!</p>
+    <button onclick="shopNow()">Shop Now</button>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product">
+      <img src="shirt.jpg" alt="Shirt">
+      <h3>Classic Shirt</h3>
+      <p>$25</p>
+      <button onclick="addToCart('Classic Shirt', 25)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pants.jpg" alt="Pants">
+      <h3>Modern Pants</h3>
+      <p>$40</p>
+      <button onclick="addToCart('Modern Pants', 40)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p>Total: $<span id="totalPrice">0</span></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 GO STORE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
